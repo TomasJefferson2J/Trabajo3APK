@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
-
     EditText et1,et2;
 
     @Override
@@ -24,6 +23,12 @@ public class MainActivity extends AppCompatActivity {
 
         int k1 = Integer.parseInt(n1);
         int k2 = Integer.parseInt(n2);
+
+        if(k1 > k2){
+            
+        }
+
+
     }
 
 }
