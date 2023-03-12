@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     EditText et1,et2;
@@ -25,9 +26,28 @@ public class MainActivity extends AppCompatActivity {
         int k2 = Integer.parseInt(n2);
 
         if(k1 > k2){
-            
+            Toast.makeText(this, "El mayor numero es" + k1, Toast.LENGTH_SHORT).show();
+        }else {
+            Toast.makeText(this, "El mayor numero es" + k2, Toast.LENGTH_SHORT).show();
+                    
+
         }
 
+
+    }
+    public void Menor(View view){
+        string n1 = et1.getText().toString();
+        string n2 = et2.getText().toString();
+
+        int k1 = Integer.parseInt(n1);
+        int k2 = Integer.parseInt(n2);
+
+        if (k1 < k2){
+
+            Toast.makeText(this, "El menor es " + k1, Toast.LENGTH_SHORT).show();
+        }else {
+            Toast.makeText(this, "El menor es " + k2, Toast.LENGTH_SHORT).show();
+        }
 
     }
 
